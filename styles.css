@@ -1005,225 +1005,6 @@ input:focus, textarea:focus, select:focus {
   color: white;
 }
 
-/* Reviews Box Redesign */
-.reviews-box {
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  padding: 32px 32px 24px 32px;
-  margin: 0 auto;
-  max-width: 95vw;
-}
-.reviews-divider {
-  border: none;
-  border-top: 1px solid #e5e5e5;
-  margin: 32px 0 24px 0;
-}
-.reviews-box .trustpilot-rating {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 0;
-  background: none;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-.reviews-box .star-icon {
-  font-size: 60px;
-  color: #00b67a;
-}
-.reviews-box .rating-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.reviews-box .trustpilot {
-  font-size: 24px;
-  font-weight: 700;
-  color: #222;
-}
-.reviews-box .stars {
-  color: #00b67a;
-  font-size: 22px;
-}
-.reviews-box .score {
-  font-size: 22px;
-  font-weight: 700;
-  color: #222;
-}
-.reviews-box .review-cards {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 0;
-  justify-content: space-between;
-}
-.reviews-box .review-card {
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  flex: 1 1 0;
-  min-width: 0;
-}
-.reviews-box .review-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-.reviews-box .review-header .stars {
-  color: #00b67a;
-  font-size: 16px;
-}
-.reviews-box .reviewer {
-  font-size: 15px;
-  color: #222;
-  font-weight: 600;
-}
-.reviews-box .review-card h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 8px;
-}
-.reviews-box .review-card p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-@media (max-width: 1024px) {
-  .reviews-box {
-    padding: 18px 8px 12px 8px;
-  }
-  .reviews-box .review-cards {
-    gap: 12px;
-  }
-}
-@media (max-width: 768px) {
-  .reviews-box .review-cards {
-    flex-direction: column;
-    gap: 18px;
-  }
-}
-
-/* Floating Review Cards Section */
-.floating-reviews {
-  background: #fff;
-  padding: 80px 0 80px 0;
-}
-.floating-reviews-row {
-  display: flex;
-  justify-content: center;
-  gap: 64px;
-  flex-wrap: wrap;
-}
-.floating-review-card {
-  position: relative;
-  background: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 320px;
-  max-width: 350px;
-  margin-top: 80px;
-  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
-}
-.floating-badge {
-  position: absolute;
-  top: -80px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-  padding: 18px 36px 12px 36px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 2;
-}
-.badge-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 2px;
-  letter-spacing: 0.5px;
-  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
-}
-.badge-stars {
-  color: #ffc107;
-  font-size: 28px;
-  margin-bottom: 2px;
-  letter-spacing: 2px;
-}
-.badge-logo {
-  height: 32px;
-  margin-top: 2px;
-}
-.floating-review-box {
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 14px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
-  padding: 24px 22px 18px 22px;
-  margin-top: 48px;
-  min-height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
-}
-.reviewer-name {
-  font-size: 18px;
-  font-weight: 500;
-  color: #222;
-  margin-bottom: 4px;
-  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
-}
-.reviewer-rating {
-  font-size: 16px;
-  font-weight: 400;
-  color: #222;
-  margin-bottom: 8px;
-}
-.floating-review-box .badge-stars {
-  font-size: 22px;
-  margin-left: 4px;
-  color: #ffc107;
-}
-.reviewer-text {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
-  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
-}
-.review-highlight {
-  color: #1976d2;
-  font-weight: 600;
-}
-@media (max-width: 1200px) {
-  .floating-reviews-row {
-    gap: 32px;
-  }
-  .floating-review-card {
-    min-width: 260px;
-    max-width: 320px;
-  }
-}
-@media (max-width: 900px) {
-  .floating-reviews-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .floating-review-card {
-    margin-top: 60px;
-  }
-}
-
 /* Redesigned Features Bar */
 .features-bar {
   background: #0a2342;
@@ -1586,49 +1367,312 @@ input:focus, textarea:focus, select:focus {
     font-size: 12px;
     margin: 0;
   }
-  .floating-reviews {
-    padding: 30px 0 30px 0;
+}
+
+/* Trustpilot Review Section (New, at bottom) */
+.trustpilot-section {
+  background: #fafbfc;
+  padding: 32px 0 48px 0;
+}
+.trustpilot-title {
+  color: #184d7a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-left: 8px;
+}
+.trustpilot-box {
+  background: #fff;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 32px 24px 32px;
+  max-width: 98vw;
+  margin: 0 auto;
+}
+.trustpilot-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+.trustpilot-star-large {
+  font-size: 90px;
+  color: #00b67a;
+  font-weight: bold;
+  line-height: 1;
+}
+.trustpilot-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trustpilot-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-right: 2px;
+}
+.trustpilot-stars {
+  color: #00b67a;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.trustpilot-score {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-left: 4px;
+}
+.trustpilot-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 24px 0 18px 0;
+}
+.trustpilot-reviews-row {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.trustpilot-review-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.trustpilot-review-badge {
+  color: #00b67a;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.trustpilot-review-badge span {
+  color: #184d7a;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.trustpilot-review-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+.trustpilot-review-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .trustpilot-box {
+    padding: 18px 8px 12px 8px;
   }
-  .floating-reviews-row {
+  .trustpilot-reviews-row {
+    gap: 12px;
+  }
+  .trustpilot-header {
+    gap: 12px;
+  }
+  .trustpilot-star-large {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .trustpilot-reviews-row {
     flex-direction: column;
     gap: 18px;
   }
-  .floating-review-card {
-    min-width: 0;
-    max-width: 100%;
-    margin-top: 40px;
-  }
-  .floating-badge {
-    top: -40px;
-    padding: 10px 16px 6px 16px;
-    border-radius: 8px;
-  }
-  .badge-title {
-    font-size: 12px;
-  }
-  .badge-stars {
-    font-size: 16px;
-  }
-  .badge-logo {
-    height: 18px;
-  }
-  .floating-review-box {
-    border-radius: 8px;
-    padding: 12px 10px 10px 10px;
-    margin-top: 24px;
-    min-height: 60px;
-  }
-  .reviewer-name {
-    font-size: 13px;
-  }
-  .reviewer-rating {
-    font-size: 12px;
-  }
-  .floating-review-box .badge-stars {
-    font-size: 13px;
-  }
-  .reviewer-text {
-    font-size: 11px;
+  .trustpilot-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 }
 
+/* Floating Review Cards Section (EXACT MATCH to image) */
+.floating-reviews {
+  background: #fafbfc;
+  padding: 48px 0 48px 0;
+}
+.floating-reviews-row {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+.floating-review-card {
+  position: relative;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 350px;
+  margin-top: 80px;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+}
+.floating-badge {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 18px 36px 12px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  border: 1px solid #e5e5e5;
+}
+.floating-badge img{
+  height: 90%;
+  width: 60%;
+}
+.badge-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+}
+.badge-stars {
+  color: #ffc107;
+  font-size: 28px;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+}
+.badge-logo {
+  height: 60%;
+  margin-top: 2px;
+}
+.floating-review-box {
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  padding: 24px 22px 18px 22px;
+  margin-top: 48px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+}
+.reviewer-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 4px;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+}
+.reviewer-rating {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 8px;
+}
+.floating-review-box .badge-stars {
+  font-size: 22px;
+  margin-left: 4px;
+  color: #ffc107;
+}
+.reviewer-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  font-family: 'Segoe UI', 'Montserrat', Arial, sans-serif;
+}
+.review-highlight {
+  color: #1976d2;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .floating-reviews-row {
+    gap: 32px;
+  }
+  .floating-review-card {
+    min-width: 260px;
+    max-width: 320px;
+  }
+}
+@media (max-width: 900px) {
+  .floating-reviews-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .floating-review-card {
+    margin-top: 60px;
+  }
+}
+
+.floting-upper-box {
+  border: 1px solid #000000;
+  margin: 16px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px 24px 24px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  min-height: 320px;
+}
+.floting-upper-box:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+  transform: translateY(-6px) scale(1.02);
+}
+.floating-badge {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 18px 36px 12px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  border: 1px solid #e5e5e5;
+}
+
+.Main-box{
+  width: 100vw;
+  height: 60vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.sub-dev
+{
+  width: 20%;
+  height: 60%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-sub-dev
+  {
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
