@@ -341,19 +341,22 @@ header {
 }
 
 .shop-btn {
-  background: #1e3a8a;
-  color: white;
+  background: #005385;
+  color: #fff;
   border: none;
-  padding: 6px 16px;
-  border-radius: 4px;
+  padding: 7px 22px;
+  border-radius: 999px;
   cursor: pointer;
-  font-size: 12px;
-  font-weight: 500;
-  transition: all 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+  transition: background 0.2s;
+  display: inline-block;
 }
-
-.shop-btn:hover {
-  background: #2563eb;
+.shop-btn:hover, .shop-btn:focus {
+  background: #003f63;
+  color: #fff;
 }
 
 /* Reviews Section */
@@ -1365,6 +1368,39 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+@media (max-width: 600px) {
+  .custom-banner {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 10px !important;
+    min-height: 28px !important;
+    padding: 2px 0 !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+    white-space: normal !important;
+  }
+  .banner-left, .banner-right {
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 0 1vw !important;
+    gap: 4px !important;
+    border-radius: 0 !important;
+  }
+  .banner-item, .banner-artwork, .banner-guarantee {
+    font-size: 10px !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    padding: 0 1px !important;
+  }
+  .check-icon svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+}
+
 /* Product Banner Text Styles (matches product card) */
 .product-banner-text {
   font-family: Arial, Helvetica, sans-serif;
@@ -1411,10 +1447,10 @@ input:focus, textarea:focus, select:focus {
     padding: 0 4vw;
   }
   .hero {
-    flex-direction: column;
-    height: auto;
-    min-height: 320px;
-    padding: 0;
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   .hero .container {
     flex-direction: column;
@@ -1423,15 +1459,17 @@ input:focus, textarea:focus, select:focus {
     padding: 0;
   }
   .hero-images {
-    height: 180px;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
+    height: 120px !important;
+    min-height: 80px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
   }
   .hero-images img {
-    height: 180px;
-    min-height: 120px;
-    object-fit: cover;
+    height: 100px !important;
+    min-height: 60px !important;
+    object-fit: cover !important;
+    display: block !important;
   }
   .hero-content {
     padding: 0;
