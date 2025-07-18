@@ -1733,11 +1733,23 @@ input:focus, textarea:focus, select:focus {
     padding: 0 2px;
   }
   .sub-dev {
-    width: 98%;
-    margin-bottom: 18px;
+    width: 98% !important;
+    min-width: 0 !important;
+    margin: 12px auto !important;
+    box-sizing: border-box !important;
   }
   .inner-sub-dev2 {
-    height: 100px;
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .inner-sub-dev2 img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
   }
   .inner-sub-dev {
     font-size: 13px;
