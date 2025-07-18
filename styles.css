@@ -1724,6 +1724,9 @@ input:focus, textarea:focus, select:focus {
   .inner-sub-dev {
     font-size: 15px;
   }
+  .inner-sub-dev {
+    padding: 10px !important;
+  }
 }
 @media (max-width: 600px) {
   .Main-box {
@@ -1741,5 +1744,20 @@ input:focus, textarea:focus, select:focus {
   }
   .inner-sub-dev .reviewer-name {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html, body, .container {
+    background: #fff !important;
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-dev {
+    width: 90% !important;
+    margin: 16px auto !important;
+    box-sizing: border-box !important;
   }
 }
