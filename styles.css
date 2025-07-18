@@ -1648,7 +1648,7 @@ input:focus, textarea:focus, select:focus {
 
 .Main-box{
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -1657,14 +1657,33 @@ input:focus, textarea:focus, select:focus {
   align-items: center;
   gap: 10px;
 }
+
+.inner-sub-dev2{
+  width: 30%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.inner-sub-dev2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  top: -15px;
+}
 .sub-dev
 {
   width: 20%;
-  height: 60%;
-  border: 1px solid black;
+  height: 80%;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .inner-sub-dev
   {
